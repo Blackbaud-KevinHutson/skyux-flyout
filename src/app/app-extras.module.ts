@@ -18,22 +18,21 @@ import {
 import {
   FlyoutDemoComponent
 } from './visual/flyout/flyout-demo.component';
+import { SkyModalModule } from '@skyux/modals/modules/modal';
+import { SkyFlyoutModalDemoComponent } from './visual/flyout/flyout-modal.component';
 
 @NgModule({
   imports: [
-    NoopAnimationsModule,
-    SkyFlyoutModule,
-    SkyDropdownModule
+    NoopAnimationsModule
   ],
   exports: [
     SkyFlyoutModule,
-    SkyDropdownModule
-  ],
-  providers: [
-    SkyFlyoutService
+    SkyDropdownModule,
+    SkyModalModule
   ],
   entryComponents: [
-    FlyoutDemoComponent
+    FlyoutDemoComponent,
+    SkyFlyoutModalDemoComponent
   ]
 })
 export class AppExtrasModule { }
