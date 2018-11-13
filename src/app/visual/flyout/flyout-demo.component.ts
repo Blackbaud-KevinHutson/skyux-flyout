@@ -13,6 +13,7 @@ import {
 import {
   SkyFlyoutModalDemoComponent
 } from './flyout-modal.component';
+import { FlyoutDemoContext } from './flyout-demo-context';
 
 @Component({
   selector: 'sky-test-cmp-flyout',
@@ -21,6 +22,7 @@ import {
 })
 export class FlyoutDemoComponent {
   constructor(
+    public context: FlyoutDemoContext,
     private modalService: SkyModalService
   ) { }
 
