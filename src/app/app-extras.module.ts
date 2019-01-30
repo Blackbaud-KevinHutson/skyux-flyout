@@ -2,9 +2,9 @@ import {
   NgModule
 } from '@angular/core';
 
-import {
-  NoopAnimationsModule
-} from '@angular/platform-browser/animations';
+// import {
+//   NoopAnimationsModule
+// } from '@angular/platform-browser/animations';
 
 import {
   SkyModalModule
@@ -13,6 +13,10 @@ import {
 import {
   SkyDropdownModule
 } from '@skyux/popovers';
+
+import {
+  SkyAppLinkModule
+} from '@skyux/router';
 
 import {
   SkyToastModule
@@ -31,13 +35,14 @@ import {
 } from './visual/flyout/flyout-modal.component';
 
 @NgModule({
-  imports: [
-    NoopAnimationsModule
-  ],
+  // imports: [
+  //   NoopAnimationsModule
+  // ],
   exports: [
     SkyFlyoutModule,
     SkyDropdownModule,
     SkyModalModule,
+    SkyAppLinkModule,
     SkyToastModule
   ],
   entryComponents: [
